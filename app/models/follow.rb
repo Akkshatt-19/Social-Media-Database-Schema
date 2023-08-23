@@ -4,4 +4,4 @@ class Follow < ApplicationRecord
 
     validates :follower_id, uniqueness: { scope: :followee_id }
     validates :followee_id, uniqueness: { scope: :follower_id }
-end
+end 
